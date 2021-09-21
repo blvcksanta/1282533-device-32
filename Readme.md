@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Данил Гатаулин](https://up.htmlacademy.ru/htmlcss/32/user/1282533).
-* Наставник: `Евгений Соломеин`(https://htmlacademy.ru/profile/id164065).
+* Наставник: [Евгений Соломеин](https://up.htmlacademy.ru/htmlcss/32/user/164065).
 
 ---
 
