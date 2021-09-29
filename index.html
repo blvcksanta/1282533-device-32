@@ -6,8 +6,10 @@
 </head>
 <body>
     <header class="header">
+        <a class="main-logo">
+            <img src="#" alt="device">
+        </a>
         <nav class="navigation">
-            <a class="main-logo" href="#"><img src="#" alt="device"></a>
             <ul class="navigation-user">
                 <li class="navigation-user-item">
                     <form action="https://echo.htmlacademy.ru" method="GET">
@@ -44,7 +46,7 @@
     <main class="main-index">
         <!-- Главный блок с популярным товаром -->
         <section class="product-examples">
-            <h1 class="visually-hidden">Device</h1>
+            <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
             <img class="slider-img" src="#" alt="Фото товара">
             <button class="slider-button slider-prew" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -52,7 +54,6 @@
             <button class="slider-button slider-next" type="button">
                 <span class="visually-hidden">Следующее фото</span>
             </button>
-
             <p class="short-product-description">Порхает как бабочка, жалит как пчела!</p>
             <p class="detailed-product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="detailed-description" href="#">Подробнее</a>
@@ -83,56 +84,56 @@
         <!-- Каталог товаров -->
         <section class="product-list">
             <h2 class="visually-hidden">Каталог товаров</h2>
-            <ul class="catalog">
+            <ul class="catalog-list">
                 <li class="catalog-item">
-                    <figure>
-                        <a href=""><img class="catalog-item-img" src="#" alt=""></a>
-                        <figcaption><a class="catalog-item-link" href="">Виртуальная реальность</a></figcaption>
-                    </figure>
+                    <a class="catalog-item-link" href="#">
+                        <img class="catalog-img" src="#" alt="">
+                        <span class="catalog-text">Виртуальная реальность</span>
+                    </a>
                 </li>
                 <li class="catalog-item">
-                    <figure>
-                        <a href=""><img class="catalog-item-img" src="#" alt=""></a>
-                        <figcaption><a class="catalog-item-link" href="">Моноподы для селфи</a></figcaption>
-                    </figure>
+                    <a class="catalog-item-link" href="#">
+                        <img class="catalog-img" src="#" alt="">
+                        <span class="catalog-text">Моноподы для селфи</span>
+                    </a>
                 </li>
                 <li class="catalog-item">
-                    <figure>
-                        <a href=""><img class="catalog-item-img" src="#" alt=""></a>
-                        <figcaption><a class="catalog-item-link" href="">Экшн-камеры</a></figcaption>
-                    </figure>
+                    <a class="catalog-item-link" href="#">
+                        <img class="catalog-img" src="#" alt="">
+                        <span class="catalog-text">Экшн-камеры</span>
+                    </a>
                 </li>
                 <li class="catalog-item">
-                    <figure>
-                        <a href=""><img class="catalog-item-img" src="#" alt=""></a>
-                        <figcaption><a class="catalog-item-link" href="">Фитнес-браслеты</a></figcaption>
-                    </figure>
+                    <a class="catalog-item-link" href="#">
+                        <img class="catalog-img" src="#" alt="">
+                        <span class="catalog-text">Фитнес-браслеты</span>
+                    </a>
                 </li>
                 <li class="catalog-item">
-                    <figure>
-                        <a href=""><img class="catalog-item-img" src="#" alt=""></a>
-                        <figcaption><a class="catalog-item-link" href="">Умные часы</a></figcaption>
-                    </figure>
+                    <a class="catalog-item-link" href="#">
+                        <img class="catalog-img" src="#" alt="">
+                        <span class="catalog-text">Умные часы</span>
+                    </a>
                 </li>
                 <li class="catalog-item">
-                    <figure>
-                        <a href=""><img class="catalog-item-img" src="#" alt=""></a>
-                        <figcaption><a class="catalog-item-link" href="">Квадрокоптеры</a></figcaption>
-                    </figure>
+                    <a class="catalog-item-link" href="#">
+                        <img class="catalog-img" src="#" alt="">
+                        <span class="catalog-text">Квадрокоптеры</span>
+                    </a>
                 </li>
             </ul>
         </section>
         <!-- Вкладки с дополнительной информацией -->
         <section class="services">
             <ul class="services-list">
-                <li class="services-list-item">
-                    <a href="#delivery-block" class="services-list-item-link">Доставка</a>
+                <li class="services-item">
+                    <a href="#delivery-block" class="services-link">Доставка</a>
                 </li>
-                <li class="services-list-item">
-                    <a href="#guarantee-block" class="services-list-item-link">Гарантия</a>
+                <li class="services-item">
+                    <a href="#guarantee-block" class="services-link">Гарантия</a>
                 </li>
-                <li class="services-list-item">
-                    <a href="#credit-block" class="services-list-item-link">Кредит</a>
+                <li class="services-item">
+                    <a href="#credit-block" class="services-link">Кредит</a>
                 </li>
             </ul>
             <div id="delivery-block">
@@ -153,25 +154,20 @@
         </section>
         <!-- Блок специальная доставка -->
         <section class="special-offer">
-             <ul class="special-offer-list">
-                 <li class="special-offer-item">
-                     <img src="#" alt="special-offer-img">
-                 </li>
-                 <li class="special-offer-item">
-                     <p>Доставим редкий товар под заказ</p>
-                     <button class="reference" type="button">i</button> <!-- Не уверен что этот элемент верстается через кнопку -->
-                 </li>
-             </ul>
+            <h2 class="visually-hidden">Доставка под заказ</h2>
+            <img class="special-offer-img" src="#" alt="special-offer-img">
+            <p class="special-offer-text">Доставим редкий товар под заказ</p>
+            <span class="reference">i</span>
         </section>
         <!-- Блок о компании -->
         <section class="about-us">
             <h2 class="reference-information">О нас</h2>
             <p class="reference-information-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p class="reference-information-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-            <ul class="about-us-text-list">
-                <li class="about-us-text-list-item">Меловые линии</li>
-                <li class="about-us-text-list-item">СДИК</li>
-                <li class="about-us-text-list-item">ТоксБерри</li>
+            <ul class="about-us-list">
+                <li class="about-us-item">Меловые линии</li>
+                <li class="about-us-item">СДИК</li>
+                <li class="about-us-item">ТоксБерри</li>
             </ul>
             <a href="#">Подробнее о нас</a>
         </section>
@@ -191,7 +187,7 @@
         </section>
         <!-- Блок с рассылкой -->
         <section class="newsletter">
-            <h2 class="???">Подпишитесь на рассылку</h2>
+            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
             <p class="reference-information-text">Еженедельный дайджест с обзорами новинок,  длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <form action="https://echo.htmlacademy.ru">
                 <input class="email" type="email" name="email" placeholder="Ваш e-mail">
@@ -203,22 +199,24 @@
         </section>
     </main>
     <footer> 
-        <img class="main-logo logo-footer" src="#" alt="">
+        <a class="main-logo footer-logo">
+            <img src="#" alt="device">
+        </a>
         <div>
             <p class="reference-information-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <ul class="navigation-page footer-list">
-                <li class="navigation-page-item footer-list-item">Доставка</li>
-                <li class="navigation-page-item footer-list-item">Гарантия</li>
-                <li class="navigation-page-item footer-list-item">Контакты</li>
+                <li class="navigation-page-item footer-item">Доставка</li>
+                <li class="navigation-page-item footer-item">Гарантия</li>
+                <li class="navigation-page-item footer-item">Контакты</li>
             </ul>
-            <p class="reference-information-text">Тел.: +7 (812) 812-12-12</p>
+            <a class="telephone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         </div>
         <div>
-            <p>полосочка?</p>
+            <p>-</p>
             <ul>
-                <li><a href="https://www.facebook.com/htmlacademy" target="blanck"><img src="#" alt="facebook"></a></li>
-                <li><a href="https://www.instagram.com/htmlacademy" target="blanck"><img src="#" alt="instagram"></a></li>
-                <li><a href="https://twitter.com/htmlacademy_ru" target="blanck"><img src="#" alt="tweeter"></a></li>
+                <li><a href="https://www.facebook.com/htmlacademy" target="_blank"><img src="#" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/htmlacademy" target="_blank"><img src="#" alt="instagram"></a></li>
+                <li><a href="https://twitter.com/htmlacademy_ru" target="_blank"><img src="#" alt="tweeter"></a></li>
             </ul>
             <a href="https://htmlacademy.ru" target="blanck"><img src="#" alt="htmlacademy"></a>
         </div>
