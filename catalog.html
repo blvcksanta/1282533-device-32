@@ -2,12 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>test</title>
+    <title>Каталог товаров</title>
 </head>
 <body>
     <header class="header">
+        <a class="main-logo">
+            <img src="#" alt="device">
+        </a>
         <nav class="navigation">
-            <a class="main-logo" href="#"><img src="#" alt="device"></a>
             <ul class="navigation-user">
                 <li class="navigation-user-item">
                     <form action="https://echo.htmlacademy.ru" method="GET">
@@ -15,7 +17,10 @@
                     </form>
                 </li>
                 <li class="navigation-user-item">
-                    <a class="navigation-user-link" href="#">Войти</a>
+                    <a class="navigation-user-link" href="#">Коля петухов</a>
+                </li>
+                <li class="navigation-user-item">
+                    <a class="navigation-user-link link-exit" href="#">Выйти</a>
                 </li>
                 <li class="navigation-user-item">
                     <a class="navigation-user-link" href="#">Сравнить</a>
@@ -150,10 +155,10 @@
                 </select>
             </form>
             <a href="#" class="button button-light">
-                <span class="visually-hidden">Какая-то стрелочка вверх</span>
+                <span class="visually-hidden">Сначала дорогое</span>
             </a>
             <a href="#" class="button">
-                <span class="visually-hidden">Какая-то стрелочка вниз</span>
+                <span class="visually-hidden">Сначала дешевое</span>
             </a>
             <!-- Блок с карточками товара -->
             <div class="product-card">
@@ -204,7 +209,7 @@
                     <a class="pagination-link" href="#">3</a>
                 </li>
                 <li class="pagination-item">
-                    <a class="pagination-link" href="#">...</a>
+                    <span>...</span>
                 </li>
                 <li class="pagination-item">
                     <a class="pagination-link" href="#">15</a>
