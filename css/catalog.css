@@ -1,0 +1,333 @@
+/* Место под шрифты */
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/rubik/rubik-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/rubik/rubik-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/rubik/rubik-800.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/fonts/raleway/raleway-800.woff2') format('woff2');
+}
+
+/* Общие стили */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'RubiK', 'Arial', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #000000;
+}
+
+.text-link {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.text-title {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.text-subtitle {
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.2em;
+    color: #000000;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+/* Шапка */
+
+.header {
+    background-color: #FFE17F;
+}
+
+.header--wrapper {
+    max-width: 1160px;
+}
+
+.navigation-user__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-user__item {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-user__link {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: inherit;
+    line-height: 19px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navigation-user__exit {
+    font-size: 16px;
+    opacity: 0.3;
+}
+
+.navigation-page__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-page__link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navigation-catalog {
+    display: flex;
+    max-width: 293px;
+}
+
+.navigation-page__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #FFE17F;
+}
+
+.navigation-page__button::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navigation-page__button::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: rotate(90deg);
+}
+
+.header__number-slider {
+    font-weight: 800;
+    font-size: 180px;
+    color: #FFFFFF;
+}
+
+/* Конец хедера */
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+
+}
+
+.breadcrumbs-item-link {
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.6;
+}
+
+/* Фильтр*/
+
+.black-line {
+    width: 200px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.button {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.product-details {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.product-card-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+.product-card-price {
+    font-size: 18px;
+    line-height: 21px;
+    color: #444444;
+}
+
+.new {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-text {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.pagination-show-more {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    width: 760px;
+    height: 55px;
+}
+
+/* Пагинация */
+
+.pagination {
+    list-style: none;
+    max-width: 760px;
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pagination-link {
+    color: #444444;
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+.pagination-prev, .pagination-next {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 1;
+}
+
+/* Подвал */
+
+.footer {
+    background-color: #444444;
+    color: #FFFFFF;
+}
+
+.yellow-line {
+    width: 80px;
+    height: 7px;
+    background: #FFC700;
+}
+
+.footer__address {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 239px;
+}
+
+.footer__list--nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item {
+    color: #ffffff;
+}
+ 
+.footer__tel {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer__list--link {
+    list-style: none;
+    display: flex;
+}
