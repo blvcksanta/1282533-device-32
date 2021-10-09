@@ -103,6 +103,8 @@ body {
 }
 
 .navigation-page__link {
+    font-size: 18px;
+    line-height: 21px;
     text-decoration: none;
     color: #000000;
 }
@@ -275,6 +277,8 @@ body {
 }
 
 .footer__item {
+    font-size: 18px;
+    line-height: 21px;
     color: #ffffff;
 }
  
