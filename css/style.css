@@ -66,6 +66,7 @@ body {
     color: #000000;
 }
 
+/* Временное решение */
 .visually-hidden {
     display: none;
 }
@@ -76,25 +77,16 @@ body {
     background-color: #FFE17F;
 }
 
-.header--wrapper {
+.header__wrapper {
     max-width: 1160px;
 }
 
 .navigation-user__list {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navigation-user__item {
-    display: flex;
-    align-items: center;
 }
 
 .navigation-user__link {
-    font-family: inherit;
     font-size: 16px;
-    font-weight: inherit;
     line-height: 19px;
     text-decoration: none;
     color: #000000;
@@ -102,18 +94,11 @@ body {
 
 .navigation-page__list {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
 }
 
 .navigation-page__link {
     text-decoration: none;
     color: #000000;
-}
-
-.navigation-catalog {
-    display: flex;
-    max-width: 293px;
 }
 
 .navigation-page__button {
@@ -145,27 +130,20 @@ body {
     transform: rotate(90deg);
 }
 
-.header__number-slider {
-    font-weight: 800;
-    font-size: 180px;
-    color: #FFFFFF;
-}
-
 /* Конец хедера */
 
 /* Главный блок с популярным товаром */
 
-.advertising {
+.promo {
     max-width: 1160px;
-    display: flex;
 }
 
-.advertising__slider--wrapper {
+.promo__slider {
     max-width: 560px;
     max-height: 560px;
 }
 
-.advertising__pagination {
+.description__pagination {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -247,11 +225,11 @@ body {
     background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(240,240,240,1) 50%);
 }
 
-.services-wrapper {
+.services__wrapper {
     max-width: 1440px;
 }
 
-.services-list {
+.services__list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -271,7 +249,7 @@ body {
     background-color: #F0F0F0;
 }
 
-.special-offer-img-wrapper {
+.special-offer__img--wrapper {
     width: 125px;
     height: 100px;
     background-color: #FFE17F;
@@ -280,18 +258,19 @@ body {
     align-items: center;
 }
 
-.special-offer-text {
+.special-offer__text {
     font-size: 20px;
     line-height: 23px;
 }
 
-.reference {
+.special-offer__reference {
     margin-right: 33px;
 }
 
 /* Блок о компании и контакты*/
 
-.black-line {
+/* Псевдоклассы - переделать */
+.black-line {       
     width: 80px;
     height: 7px;
     background-color: #000000;
@@ -308,7 +287,7 @@ body {
     font-weight: 700;
 }
 
-.contacts__adress {
+.contacts__address {
     font-style: normal;
 }
 
@@ -328,7 +307,7 @@ body {
     background-color: #F0F0F0;
 }
 
-.newsletter--wrapper {
+.newsletter__wrapper {
     max-width: 1440px;
 }
 
@@ -358,7 +337,7 @@ body {
     background: #FFC700;
 }
 
-.footer__adress {
+.footer__address {
     font-size: 16px;
     line-height: 19px;
     max-width: 239px;
@@ -366,9 +345,7 @@ body {
 
 .footer__list--nav {
     list-style: none;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-between;
+    padding: 0;
 }
 
 .footer__item {
@@ -383,5 +360,4 @@ body {
 
 .footer__list--link {
     list-style: none;
-    display: flex;
 }

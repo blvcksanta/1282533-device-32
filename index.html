@@ -7,11 +7,11 @@
 </head>
 <body>
     <header class="header">
-        <div class="header--wrapper">
+        <div class="header__wrapper">
             <a class="header__logo main-logo">
                 <img src="./img/main-logo.svg" alt="device">
             </a>
-            <nav class="heager__navigation">
+            <nav class="heager__navigation-user">
                 <ul class="navigation-user__list">
                     <li class="navigation-user__item">
                         <span><img src="./img/icon/icon-search.svg" alt="icon-search"></span>
@@ -33,7 +33,7 @@
                     </li>
                 </ul>
                 <ul class="navigation-page__list">
-                    <li class="navigation-page__item navigation-catalog ">
+                    <li class="navigation-page__item navigation-page__item--catalog">
                         <a class="navigation-page__link text-link" href="catalog.html">Каталог товаров</a>
                         <button class="navigation-page__button" type="button">
                             <span class="visually-hidden">+</span>
@@ -50,27 +50,26 @@
                     </li>
                 </ul>
             </nav>
-            <p class="header__number-slider">01</p>
         </div>
     </header>
     <main class="main-index">
         <!-- Главный блок с популярным товаром (реклама) -->
-        <section class="advertising">
+        <section class="promo">
             <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
-            <div class="advertising__slider--wrapper">
+            <div class="promo__slider">
                 <img src="./img/slider/slider-1.png" alt="Фото товара" width="560" height="560">
-                <button class="advertising__button slider-prew" type="button">
+                <button class="slider__button slider__button--prev" type="button">
                     <span class="visually-hidden">Предыдущее фото</span>
                 </button>
-                <button class="advertising__button slider-next" type="button">
+                <button class="slider__button slider__button--next" type="button">
                     <span class="visually-hidden">Следующее фото</span>
                 </button>
             </div>
-            <div class="advertising__text--wrapper">
-                <p class="advertising__title text-title">Порхает как бабочка, жалит как пчела!</p>
-                <p class="advertising__description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="advertising__link text-link" href="#">Подробнее</a>
-                <ol class="advertising__pagination">
+            <div class="promo__description">
+                <p class="description__title text-title">Порхает как бабочка, жалит как пчела!</p>
+                <p class="description__text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
+                <a class="description__link text-link" href="#">Подробнее</a>
+                <ol class="description__pagination">
                     <li class="pagination__item">
                         <button class="pagination__button pagination__button--active">
                             <span class="visually-hidden">1 Фото</span>
@@ -87,7 +86,7 @@
                         </button>
                     </li>
                 </ol>
-                <dl class="advertising__characteristics">
+                <dl class="promo__characteristics">
                     <dt class="characteristics__data">800 м</dt>
                     <dd class="characteristics__description">Дальность полета</dd>
                     <dt class="characteristics__data">50 м</dt>
@@ -151,43 +150,43 @@
         </section>
         <!-- Вкладки с дополнительной информацией -->
         <section class="services">
-            <div class="services-wrapper">
-                <ul class="services-list">
-                    <li class="services-item services-active">
+            <div class="services__wrapper">
+                <ul class="services__list">
+                    <li class="services__item services__item--active">
                         <a href="#delivery-block" class="services-link text-link">Доставка</a>
                     </li>
-                    <li class="services-item visually-hidden">
+                    <li class="services__item visually-hidden">
                         <a href="#guarantee-block" class="services-link text-link">Гарантия</a>
                     </li>
-                    <li class="services-item visually-hidden">
+                    <li class="services__item visually-hidden">
                         <a href="#credit-block" class="services-link text-link">Кредит</a>
                     </li>
                 </ul>
-                <div id="delivery-block">
-                    <h2 class="text-title">Доставка</h2>
-                    <p class="services-description">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                    <img class="delivery-img" src="./img/icon/icon-delivery.svg" alt="icon-delivery" width="136" height="164">
+                <div class="services__description" id="delivery-block">
+                    <h2 class="description__title text-title">Доставка</h2>
+                    <p class="description__text">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    <img class="description__img description__img--delivery" src="./img/icon/icon-delivery.svg" alt="icon-delivery" width="136" height="164">
                 </div>
-                <div class="visually-hidden" id="guarantee-block">
-                    <h2>Гарантия</h2>
-                    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                    <img class="guarantee-img" src="./img/icon/icon-warranty 1.svg" alt="" width="171" height="195">
+                <div class="services__description visually-hidden" id="guarantee-block">
+                    <h2 class="description__title text-title">Гарантия</h2>
+                    <p class="description__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                    <img class="description__img description__img--guarantee" src="./img/icon/icon-warranty 1.svg" alt="" width="171" height="195">
                 </div>
-                <div class="visually-hidden" id="credit-block">
-                    <h2>Кредит</h2>
-                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-                    <img class="credit-img" src="./img/icon/icon-credit.svg" alt="" width="156" height="188   ">
+                <div class="services__description visually-hidden" id="credit-block">
+                    <h2 class="description__title text-title">Кредит</h2>
+                    <p class="description__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                    <img class="description__img description__img--credit" src="./img/icon/icon-credit.svg" alt="" width="156" height="188   ">
                 </div>
             </div>
         </section>
         <!-- Блок специальная доставка -->
         <section class="special-offer">
             <h2 class="visually-hidden">Доставка под заказ</h2>
-            <div class="special-offer-img-wrapper" >
-                <img class="special-offer-img" src="./img/icon/icon-special_delivery.svg" alt="special-offer-img" width="47" height="31 ">
+            <div class="special-offer__img--wrapper" >
+                <img src="./img/icon/icon-special_delivery.svg" alt="special-offer-img" width="47" height="31">
             </div>
-            <p class="special-offer-text text-link">Доставим редкий товар под заказ</p>
-            <span class="reference"><img src="/img/info 1.svg" alt=""></span>
+            <p class="special-offer__text text-link">Доставим редкий товар под заказ</p>
+            <span class="special-offer__reference"><img src="/img/info 1.svg" alt=""></span>
         </section>
         <!-- Блок о компании -->
         <section class="about-us">
@@ -206,11 +205,11 @@
         <section class="contacts" id="contacts">
             <div class="black-line"></div>
             <h2 class="contacts__title text-title">Контакты</h2>
-            <p class="contacts_description">Вы можете забрать сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
+            <p class="contacts__description">Вы можете забрать сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
             <h3 class="visually-hidden">Адрес</h3>
             <p class="contacts__place place-and-time">Интернет-магазин &#171;Девайс&#187;</p>
             <address>
-                <p class="contacts__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <p class="contacts__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                 <a class="contacts__tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </address>
             <h3 class="contacts__time place-and-time">Время работы</h3>
@@ -218,11 +217,11 @@
                 <li class="contacts__item">пн-пт: с 10:00 до 22:00</li>
                 <li class="contacts__item">сб-вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="about-us-link text-link" href="#">Напишите нам</a>
+            <a class="contacts__link text-link" href="#">Напишите нам</a>
         </section>
         <!-- Блок с рассылкой -->
         <section class="newsletter">
-            <div class="newsletter--wrapper">
+            <div class="newsletter__wrapper">
                 <h2 class="newsletter__title text-title">Подпишитесь <br> на рассылку</h2>
                 <p class="newsletter__description">Еженедельный дайджест с обзорами новинок, <br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
                 <form action="https://echo.htmlacademy.ru">
@@ -239,12 +238,12 @@
         </section>
     </main>
     <footer class="footer"> 
-        <div class="footer--wrapper">
+        <div class="footer__wrapper">
             <a class="footer__logo main-logo">
                 <img src="./img/main-logo.svg" alt="device">
             </a>
             <div>
-                <p class="footer__adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <p class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                 <ul class="footer__list--nav">
                     <li class="footer__item text-link">Доставка</li>
                     <li class="footer__item text-link">Гарантия</li>
@@ -258,7 +257,7 @@
                         <div class="yellow-line"></div>
                     </li>
                     <li>
-                        <a class="hj" href="https://www.facebook.com/htmlacademy" target="_blank">
+                        <a href="https://www.facebook.com/htmlacademy" target="_blank">
                             <img src="./img/icon/facebook.png" alt="facebook" width="40" height="40">
                         </a>
                     </li>
@@ -273,7 +272,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://htmlacademy.ru" target="blanck">
+                        <a href="https://htmlacademy.ru" target="_blank">
                             <img src="./img/icon/htmlacademy.png" alt="htmlacademy" width="115" height="34">
                         </a>
                     </li>

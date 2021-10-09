@@ -49,8 +49,6 @@ body {
     font-family: 'Raleway', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
-    line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
@@ -63,17 +61,13 @@ body {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
-    color: #000000;
 }
 
 .text-subtitle {
-    font-family: 'Rubik', 'Arial', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.2em;
-    color: #000000;
 }
 
 .visually-hidden {
@@ -86,49 +80,31 @@ body {
     background-color: #FFE17F;
 }
 
-.header--wrapper {
+.header__wrapper {
     max-width: 1160px;
 }
 
 .navigation-user__list {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navigation-user__item {
-    display: flex;
-    align-items: center;
 }
 
 .navigation-user__link {
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: inherit;
-    line-height: 19px;
     text-decoration: none;
     color: #000000;
 }
 
-.navigation-user__exit {
+.navigation-user--exit {
     font-size: 16px;
     opacity: 0.3;
 }
 
 .navigation-page__list {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
 }
 
 .navigation-page__link {
     text-decoration: none;
     color: #000000;
-}
-
-.navigation-catalog {
-    display: flex;
-    max-width: 293px;
 }
 
 .navigation-page__button {
@@ -160,24 +136,16 @@ body {
     transform: rotate(90deg);
 }
 
-.header__number-slider {
-    font-weight: 800;
-    font-size: 180px;
-    color: #FFFFFF;
-}
-
 /* Конец хедера */
 
 /* Хлебные крошки */
 
-.breadcrumbs {
+.inner-header__breadcrumbs {
     list-style: none;
     padding-left: 0;
-    display: flex;
-
 }
 
-.breadcrumbs-item-link {
+.breadcrumbs__link {
     text-decoration: none;
     color: #000000;
     opacity: 0.6;
@@ -191,37 +159,30 @@ body {
     background-color: #000000;
 }
 
-.button {
+.filtration__button {
     font-size: 18px;
     line-height: 21px;
 }
 
-.product-details {
+.product-card__details {
     font-size: 18px;
     line-height: 21px;
 }
 
-.product-card-list {
+.product-card__list {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.product-card-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.product-card-link {
+.product-card__link {
     text-decoration: none;
 }
 
-.product-card-title {
+.product-card__title {
     line-height: 24px;
     letter-spacing: 0;
 }
 
-.product-card-price {
+.product-card__price {
     font-size: 18px;
     line-height: 21px;
     color: #444444;
@@ -250,6 +211,8 @@ body {
     opacity: 0.6;
 }
 
+/* Пагинация */
+
 .pagination-show-more {
     font-family: 'Raleway', 'Arial', sans-serif;
     font-weight: 800;
@@ -264,23 +227,19 @@ body {
     height: 55px;
 }
 
-/* Пагинация */
-
 .pagination {
     list-style: none;
     max-width: 760px;
     background-color: #EBEBEB;
-    display: flex;
-    justify-content: space-around;
 }
 
-.pagination-link {
+.pagination__link {
     color: #444444;
     opacity: 0.3;
     text-decoration: none;
 }
 
-.pagination-prev, .pagination-next {
+.pagination__link--prev, .pagination__link--next {
     font-family: 'Raleway', 'Arial', sans-serif;
     font-weight: 800;
     font-size: 16px;
@@ -312,9 +271,7 @@ body {
 
 .footer__list--nav {
     list-style: none;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-between;
+    padding: 0;
 }
 
 .footer__item {
@@ -329,5 +286,4 @@ body {
 
 .footer__list--link {
     list-style: none;
-    display: flex;
 }
