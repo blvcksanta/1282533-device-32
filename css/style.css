@@ -43,6 +43,8 @@ body {
     font-weight: 400;
     line-height: 30px;
     color: #444444;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-link {
@@ -78,11 +80,20 @@ body {
 }
 
 .header__wrapper {
+    margin: 0 auto;
     max-width: 1160px;
+    width: 100%;
+}
+
+.header__navigation {
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation-user__list {
-    list-style: none;
+    padding-left: 0;
+    list-style: none; 
+    display: flex;
 }
 
 .navigation-user__link {
@@ -93,7 +104,9 @@ body {
 }
 
 .navigation-page__list {
-    list-style: none;
+    padding-left: 0;
+    list-style: none; 
+    display: flex;
 }
 
 .navigation-page__link {
@@ -134,13 +147,26 @@ body {
 
 /* Главный блок с популярным товаром */
 
+.main {
+    flex-grow: 1;
+}
+
 .promo {
+    margin: 0 auto;
     max-width: 1160px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .promo__slider {
     max-width: 560px;
-    max-height: 560px;
+    width: 100%;
+}
+
+.promo__description {
+    max-width: 572px;
+    width: 100%;
 }
 
 .description__pagination {
@@ -188,7 +214,9 @@ body {
 /* Каталог товаров */
 
 .catalog {
+    margin: 0 auto;
     max-width: 1160px;
+    width: 100%;
 }
 
 .catalog__list {
@@ -197,6 +225,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .catalog__link {
@@ -226,7 +255,9 @@ body {
 }
 
 .services__wrapper {
-    max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1160px;
+    width: 100%;
 }
 
 .services__list {
@@ -235,14 +266,17 @@ body {
     padding: 0;
 }
 
-.services-description {
+.services__description {
     max-width: 497px;
+    width: 100%;
 }
 
 /* Блок специальная доставка */
 
 .special-offer {
+    margin: 0 auto;
     max-width: 1160px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,11 +303,23 @@ body {
 
 /* Блок о компании и контакты*/
 
+.info-block {
+    margin: 0 auto;
+    max-width: 1160px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 /* Псевдоклассы - переделать */
 .black-line {       
     width: 80px;
     height: 7px;
     background-color: #000000;
+}
+
+.about-us, .contacts {
+    max-width: 560px;
+    width: 100%;
 }
 
 .about-us__list {
@@ -308,7 +354,9 @@ body {
 }
 
 .newsletter__wrapper {
-    max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1160px;
+    widows: 100%;
 }
 
 .newsletter__title {
@@ -331,10 +379,21 @@ body {
     color: #FFFFFF;
 }
 
+.footer__wrapper {
+    margin: 0 auto;
+    max-width: 1160px;
+    width: 100%;
+}
+
 .yellow-line {
     width: 80px;
     height: 7px;
     background: #FFC700;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__address {
@@ -346,6 +405,7 @@ body {
 .footer__list--nav {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 .footer__item {
@@ -360,4 +420,6 @@ body {
 
 .footer__list--link {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
