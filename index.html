@@ -7,46 +7,46 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__wrapper">
-            <a class="header__logo main-logo">
+        <div class="header__wrapper wrapper">
+            <a class="header__logo">
                 <img src="./img/main-logo.svg" alt="device">
             </a>
             <nav class="header__navigation">
-                <ul class="navigation-user__list">
-                    <li class="navigation-user__item">
+                <ul class="navigation__user">
+                    <li class="user__item">
                         <span><img src="./img/icon/icon-search.svg" alt="icon-search"></span>
                         <form action="https://echo.htmlacademy.ru" method="GET">
                             <input type="search" name="search" placeholder="Поиск по сайту">
                         </form>
                     </li>
-                    <li class="navigation-user__item">
+                    <li class="user__item">
                         <span><img src="./img/icon/icon-login.svg" alt="icon-login"></span>
-                        <a class="navigation-user__link" href="#">Войти</a>
+                        <a class="user__link" href="#">Войти</a>
                     </li>
-                    <li class="navigation-user__item">
+                    <li class="user__item">
                         <span><img src="./img/icon/icon-compare.svg" alt="icon-compare"></span>
-                        <a class="navigation-user__link" href="#">Сравнить</a>
+                        <a class="user__link" href="#">Сравнить</a>
                     </li>
-                    <li class="navigation-user__item">
+                    <li class="user__item">
                         <span><img src="./img/icon/icon-basket.svg" alt="icon-basket"></span>
-                        <a class="navigation-user__link" href="#">Корзина</a>
+                        <a class="user__link" href="#">Корзина</a>
                     </li>
                 </ul>
-                <ul class="navigation-page__list">
-                    <li class="navigation-page__item navigation-page__item--catalog">
-                        <a class="navigation-page__link text-link" href="catalog.html">Каталог товаров</a>
-                        <button class="navigation-page__button" type="button">
+                <ul class="navigation__page">
+                    <li class="page__item page__item--catalog">
+                        <a class="page__link text-link" href="catalog.html">Каталог товаров</a>
+                        <button class="page__button" type="button">
                             <span class="visually-hidden">+</span>
                         </button>
                     </li>
-                    <li class="navigation-page__item">
-                        <a class="navigation-page__link text-link" href="#delivery-block">Доставка</a>
+                    <li class="page__item">
+                        <a class="page__link text-link" href="#delivery-block">Доставка</a>
                     </li>
-                    <li class="navigation-page__item">
-                        <a class="navigation-page__link text-link" href="#guarantee-block">Гарантия</a>
+                    <li class="page__item">
+                        <a class="page__link text-link" href="#guarantee-block">Гарантия</a>
                     </li>
-                    <li class="navigation-page__item">
-                        <a class="navigation-page__link text-link" href="#contacts">Контакты</a>
+                    <li class="page__item">
+                        <a class="page__link text-link" href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -54,7 +54,7 @@
     </header>
     <main class="main">
         <!-- Главный блок с популярным товаром (реклама) -->
-        <section class="promo">
+        <section class="promo wrapper">
             <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
             <div class="promo__slider">
                 <img src="./img/slider/slider-1.png" alt="Фото товара" width="560" height="560">
@@ -95,7 +95,7 @@
             </div>
         </section>
         <!-- Каталог товаров -->
-        <section class="catalog">
+        <section class="catalog wrapper">
             <h2 class="visually-hidden">Каталог товаров</h2>
             <ul class="catalog__list">
                 <li class="catalog__item">
@@ -150,16 +150,16 @@
         </section>
         <!-- Вкладки с дополнительной информацией -->
         <section class="services">
-            <div class="services__wrapper">
+            <div class="services__wrapper wrapper">
                 <ul class="services__list">
                     <li class="services__item services__item--active">
-                        <a href="#delivery-block" class="services-link text-link">Доставка</a>
+                        <a class="services__link text-link" href="#delivery-block">Доставка</a>
                     </li>
                     <li class="services__item visually-hidden">
-                        <a href="#guarantee-block" class="services-link text-link">Гарантия</a>
+                        <a class="services__link text-link" href="#guarantee-block">Гарантия</a>
                     </li>
                     <li class="services__item visually-hidden">
-                        <a href="#credit-block" class="services-link text-link">Кредит</a>
+                        <a class="services__link text-link" href="#credit-block">Кредит</a>
                     </li>
                 </ul>
                 <div class="services__description" id="delivery-block">
@@ -182,14 +182,14 @@
         <!-- Блок специальная доставка -->
         <section class="special-offer">
             <h2 class="visually-hidden">Доставка под заказ</h2>
-            <div class="special-offer__img--wrapper" >
+            <div class="special-offer__img special-offer__img--wrapper" >
                 <img src="./img/icon/icon-special_delivery.svg" alt="special-offer-img" width="47" height="31">
             </div>
             <p class="special-offer__text text-link">Доставим редкий товар под заказ</p>
             <span class="special-offer__reference"><img src="./img/info 1.svg" alt=""></span>
         </section>
         <!-- Блок о компании -->
-        <section class="info-block">
+        <section class="info-block wrapper">
             <div class="about-us">
                 <div class="black-line"></div>
                 <h2 class="about-us__title text-title">О нас</h2>
@@ -208,9 +208,9 @@
                 <p class="contacts__description">Вы можете забрать сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
                 <h3 class="visually-hidden">Адрес</h3>
                 <p class="contacts__place place-and-time">Интернет-магазин &#171;Девайс&#187;</p>
-                <address>
-                    <p class="contacts__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                    <a class="contacts__tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <address class="contacts__address">
+                    <p class="address__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                    <a class="address__tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
                 </address>
                 <h3 class="contacts__time place-and-time">Время работы</h3>
                 <ul class="contacts__list">
@@ -222,7 +222,7 @@
         </section>
         <!-- Блок с рассылкой -->
         <section class="newsletter">
-            <div class="newsletter__wrapper">
+            <div class="newsletter__wrapper wrapper">
                 <h2 class="newsletter__title text-title">Подпишитесь <br> на рассылку</h2>
                 <p class="newsletter__description">Еженедельный дайджест с обзорами новинок, <br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
                 <form action="https://echo.htmlacademy.ru">
@@ -239,20 +239,20 @@
         </section>
     </main>
     <footer class="footer"> 
-        <div class="footer__wrapper">
-            <a class="footer__logo main-logo">
+        <div class="footer__wrapper wrapper">
+            <a class="footer__logo">
                 <img src="./img/main-logo.svg" alt="device">
             </a>
             <div class="footer__info">
-                <p class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <ul class="footer__list--nav">
-                    <li class="footer__item text-link">Доставка</li>
-                    <li class="footer__item text-link">Гарантия</li>
-                    <li class="footer__item text-link">Контакты</li>
+                <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+                <ul class="footer__nav">
+                    <li class="nav__item text-link">Доставка</li>
+                    <li class="nav__item text-link">Гарантия</li>
+                    <li class="nav__item text-link">Контакты</li>
                 </ul>
                 <a class="footer__tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             </div>
-            <ul class="footer__list--link">
+            <ul class="footer__link">
                 <li>
                     <div class="yellow-line"></div>
                 </li>

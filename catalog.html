@@ -3,51 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
-    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="header__wrapper">
-            <a class="header__logo main-logo">
+        <div class="header__wrapper wrapper">
+            <a class="header__logo">
                 <img src="./img/main-logo.svg" alt="device">
             </a>
-            <nav class="heager__navigation-user">
-                <ul class="navigation-user__list">
-                    <li class="navigation-user__item">
+            <nav class="header__navigation">
+                <ul class="navigation__user">
+                    <li class="user__item">
                         <span><img src="./img/icon/icon-search.svg" alt="icon-search"></span>
                         <form action="https://echo.htmlacademy.ru" method="GET">
                             <input type="search" name="search" placeholder="Поиск по сайту">
                         </form>
                     </li>
-                    <li class="navigation-user__item">
+                    <li class="user__item">
                         <span><img src="./img/icon/icon-login.svg" alt="icon-login"></span>
-                        <a class="navigation-user__link" href="#">Коля Петухов</a>
-                        <a class="navigation-user__link navigation-user--exit" href="#">Выйти</a>
+                        <a class="user__link" href="#">Коля Петухов</a>
+                        <a class="user__link user--exit" href="#">Выйти</a>
                     </li>
-                    <li class="navigation-user__item">
+                    <li class="user__item">
                         <span><img src="./img/icon/icon-compare.svg" alt="icon-compare"></span>
-                        <a class="navigation-user__link" href="#">Сравнить</a>
+                        <a class="user__link" href="#">Сравнить</a>
                     </li>
-                    <li class="navigation-user__item">
+                    <li class="user__item">
                         <span><img src="./img/icon/icon-basket.svg" alt="icon-basket"></span>
-                        <a class="navigation-user__link" href="#">Корзина</a>
+                        <a class="user__link" href="#">Корзина</a>
                     </li>
                 </ul>
-                <ul class="navigation-page__list">
-                    <li class="navigation-page__item navigation-page--catalog">
-                        <a class="navigation-page__link text-link" href="catalog.html">Каталог товаров</a>
-                        <button class="navigation-page__button" type="button">
+                <ul class="navigation__page">
+                    <li class="page__item page__item--catalog">
+                        <a class="page__link text-link" href="catalog.html">Каталог товаров</a>
+                        <button class="page__button" type="button">
                             <span class="visually-hidden">+</span>
                         </button>
                     </li>
-                    <li class="navigation-page__item">
-                        <a class="navigation-page__link text-link" href="#delivery-block">Доставка</a>
+                    <li class="page__item">
+                        <a class="page__link text-link" href="#delivery-block">Доставка</a>
                     </li>
-                    <li class="navigation-page__item">
-                        <a class="navigation-page__link text-link" href="#guarantee-block">Гарантия</a>
+                    <li class="page__item">
+                        <a class="page__link text-link" href="#guarantee-block">Гарантия</a>
                     </li>
-                    <li class="navigation-page__item">
-                        <a class="navigation-page__link text-link" href="#contacts">Контакты</a>
+                    <li class="page__item">
+                        <a class="page__link text-link" href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -55,123 +55,122 @@
     </header>
     <main class="main">
         <!-- Хлебные крошки -->
-        <header class="inner-header">
+        <header class="inner-header wrapper">
             <h1 class="inner-header__title text-title">Моноподы для селфи</h1>
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                    <a class="breadcrumbs__link text-catalog" href="index.html">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+                    <a class="breadcrumbs__link text-catalog" href="#">Каталог товаров</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Моноподы для селфи</a>
+                    <a class="breadcrumbs__link text-catalog" href="#">Моноподы для селфи</a>
                 </li>
             </ul>
         </header>
 
-        <section class="filtration">
+        <section class="filtr wrapper">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-            <div class="left-column">
-                <p class="filtration__title text-link">Фильтр:</p>
-                <div class="black-line"></div>
-                <!-- Фильтр по ценнику -->
+            <div class="sidebar">
+                <p class="filtr__title text-catalog">Фильтр:</p>
                 <form action="https://echo.htmlacademy.ru">
-                    <fieldset class="filtration__group">
-                        <legend class="filtration__title text-subtitle">Стоимость</legend>     
-                        <button class="filtration__range-toggle filtration__range-toggle--min" type="button">
+                    <!-- Фильтр по ценнику -->
+                    <fieldset class="filtr__group">
+                        <legend class="group__title text-subtitle">Стоимость</legend>     
+                        <button class="group__range-toggle group__range-toggle--min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену</span>
                         </button>    
-                        <button class="filtration__range-toogle filtration__range-toggle--max" type="button">
+                        <button class="group__range-toogle group__range-toggle--max" type="button">
                             <span class="visually-hidden">Изменить максимальную цену</span>
                         </button>    
-                        <label class="filtration__label">
-                            от <input class="filtration__input" type="number" name="min-price">   
+                        <label class="group__label">
+                            от <input class="label__input" type="number" name="min-price">   
                         </label>    
-                        <label class="filtration__label">
-                            от <input class="filtration__input" type="number" name="max-price">   
+                        <label class="group__label">
+                            от <input class="label__input" type="number" name="max-price">   
                         </label>    
                     </fieldset>
                     <!-- Фильтр по цвету -->
-                    <fieldset class="filtration__group">
-                        <legend class="filtration__title text-subtitle">Цвет</legend>
-                            <ul class="filtration__list">
-                                <li class="filtration__item">
+                    <fieldset class="filtr__group">
+                        <legend class="group__title text-subtitle">Цвет</legend>
+                            <ul class="group__list">
+                                <li class="list__item">
                                     <label class="item__control">
                                         <input class="control__input visually-hidden" type="checkbox" name="black" checked>
                                         <span class="control__mark"></span>    
-                                        <span class="control__label">Черный</span>
+                                        <span class="control__label text-catalog">Черный</span>
                                     </label>
                                 </li>
-                                <li class="filtration__item">
+                                <li class="list__item">
                                     <label class="item__control">
                                         <input class="control__input visually-hidden" type="checkbox" name="white" checked>
                                         <span class="control__mark"></span>    
-                                        <span class="control__label">Белый</span>
+                                        <span class="control__label text-catalog">Белый</span>
                                     </label>
                                 </li>
-                                <li class="filtration__item">
+                                <li class="list__item">
                                     <label class="item__control">
                                         <input class="control__input visually-hidden" type="checkbox" name="blue">
                                         <span class="control__mark"></span>    
-                                        <span class="control__label">Синий</span>
+                                        <span class="control__label text-catalog">Синий</span>
                                     </label>
                                 </li>
-                                <li class="filtration__item">
+                                <li class="list__item">
                                     <label class="item__control">
                                         <input class="control__input visually-hidden" type="checkbox" name="red">
                                         <span class="control__mark"></span>    
-                                        <span class="control__label">Красный</span>
+                                        <span class="control__label text-catalog">Красный</span>
                                     </label>
                                 </li>
-                                <li class="filtration__item">
+                                <li class="list__item">
                                     <label class="item__control">
                                         <input class="control__input visually-hidden" type="checkbox" name="pink">
                                         <span class="control__mark"></span>    
-                                        <span class="control__label">Розовый</span>
+                                        <span class="control__label text-catalog">Розовый</span>
                                     </label>
                                 </li>
                             </ul>
                     </fieldset>
-                    <!-- Фильтр по -->
-                    <fieldset class="filtration__group">
-                        <legend class="filtration__title text-subtitle">Bluetooth</legend>
-                        <ul class="filtration__list">
-                            <li class="filtration__item">
+                    <!-- Фильтр по Bluetooth-->
+                    <fieldset class="filtr__group">
+                        <legend class="group__title text-subtitle">Bluetooth</legend>
+                        <ul class="group__list">
+                            <li class="list__item">
                                 <label class="item__control">
                                     <input class="control__input visually-hidden" type="radio" name="Bluetooth" value="there-is">
                                     <span class="control__mark"></span>    
-                                    <span class="control__label">Есть</span>
+                                    <span class="control__label text-catalog">Есть</span>
                                 </label>
                             </li>
-                            <li class="filtration__item">
+                            <li class="list__item">
                                 <label class="item__control">
                                     <input class="control__input visually-hidden" type="radio" name="Bluetooth" value="no">
                                     <span class="control__mark"></span>    
-                                    <span class="control__label">Нет</span>
+                                    <span class="control__label text-catalog">Нет</span>
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
-                    <button class="filtration__button text-link" type="submit">Показать</button>
+                    <button class="filtr__button text-link" type="submit">Показать</button>
                 </form>
             </div>
             <!-- Сортировка товаров по категории -->
-            <div class="right-column">
+            <div class="content">
                 <div class="sorting">
                     <form class="sorting__form" action="https://echo.htmlacademy.ru">
-                        <label class="sorting__label text-link" for="sorting">Сортировка</label>
+                        <label class="sorting__label text-catalog" for="sorting">Сортировка</label>
                         <select class="sorting__select-control" name="sorting" id="sorting">
-                            <option value="popular">Сначала популярное</option>
-                            <option value="cheap">Сначала дешевое</option>
-                            <option value="expensive">Сначала дорогое</option>
+                            <option value="popular">Сначала популярные</option>
+                            <option value="cheap">Сначала дорогие</option>
+                            <option value="expensive">Сначала недорогие</option>
                         </select>
                     </form>
-                    <a class="sorting__button button-light" href="#">
-                        <span class="visually-hidden">Сначала дорогое</span>
+                    <a class="sorting__button sorting__button--light" href="#">
+                        <span class="visually-hidden">Сначала недорогие</span>
                     </a>
                     <a class="sorting__button" href="#">
-                        <span class="visually-hidden">Сначала дешевое</span>
+                        <span class="visually-hidden">Сначала дорогие</span>
                     </a>
                 </div>
                 <!-- Блок с карточками товара -->
@@ -204,58 +203,55 @@
                                 <h3 class="product-card__title text-subtitle">Селфи-палка «Следуй за мной»</h3>
                                 <span class="product-card__price">4900 &#8381;</span>
                             </a>
-                            <div class="new">
-                                <span class="new-text">new</span>
-                            </div>
                         </li>
                         <li>
                             <a class="product-card__details text-link" href="">Подробнее</a>
                         </li>
                     </ul>
                 </div>
-                <button class="button pagination-show-more" type="button">Загрузить еще</button>
+                <button class="button text-link" type="button">Загрузить еще</button>
                 <!-- Пагинация -->
                 <ul class="pagination">
                     <li class="pagination__item">
-                        <a class="pagination__link pagination__link--prev pagination__link--disabled" href="#">Назад</a>
+                        <a class="pagination__link text-catalog pagination__link--prev pagination__link--disabled" href="#">Назад</a>
                     </li>
                     <li class="pagination__item">
-                        <a class="pagination__link pagination-current" href="#">1</a>
+                        <a class="pagination__link text-catalog pagination-current" href="#">1</a>
                     </li>
                     <li class="pagination__item">
-                        <a class="pagination__link" href="#">2</a>
+                        <a class="pagination__link text-catalog" href="#">2</a>
                     </li>
                     <li class="pagination__item">
-                        <a class="pagination__link" href="#">3</a>
+                        <a class="pagination__link text-catalog" href="#">3</a>
                     </li>
                     <li class="pagination__item">
-                        <span class="pagination__link">...</span>
+                        <span class="pagination__link text-catalog">...</span>
                     </li>
                     <li class="pagination__item">
-                        <a class="pagination__link" href="#">15</a>
+                        <a class="pagination__link text-catalog" href="#">15</a>
                     </li>
                     <li class="pagination__item">
-                        <a class="pagination__link pagination__link--next" href="#">Вперед</a>
+                        <a class="pagination__link text-catalog pagination__link--next" href="#">Вперед</a>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
     <footer class="footer"> 
-        <div class="footer__wrapper">
-            <a class="footer__logo main-logo">
+        <div class="footer__wrapper wrapper">
+            <a class="footer__logo">
                 <img src="./img/main-logo.svg" alt="device">
             </a>
             <div class="footer__info">
-                <p class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <ul class="footer__list--nav">
-                    <li class="footer__item text-link">Доставка</li>
-                    <li class="footer__item text-link">Гарантия</li>
-                    <li class="footer__item text-link">Контакты</li>
+                <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+                <ul class="footer__nav">
+                    <li class="nav__item text-link">Доставка</li>
+                    <li class="nav__item text-link">Гарантия</li>
+                    <li class="nav__item text-link">Контакты</li>
                 </ul>
                 <a class="footer__tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             </div>
-            <ul class="footer__list--link">
+            <ul class="footer__link">
                 <li>
                     <div class="yellow-line"></div>
                 </li>
