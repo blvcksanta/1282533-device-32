@@ -68,7 +68,9 @@
         <section class="page-catalog wrapper">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <div class="sidebar">
-                <p class="sidebar__title text-catalog">Фильтр:</p>
+                <div class="sidebar__wrapper">
+                    <p class="sidebar__title text-catalog">Фильтр:</p>
+                </div>
                 <form action="https://echo.htmlacademy.ru">
                     <!-- Фильтр по ценнику -->
                     <fieldset class="sidebar__group filt-group">
@@ -154,19 +156,21 @@
             <div class="content">
                 <div class="sorting">
                     <form class="sorting__form" action="https://echo.htmlacademy.ru">
-                        <label class="sorting__label text-catalog" for="sorting">Сортировка</label>
+                        <label class="sorting__label text-catalog" for="sorting">Сортировка:</label>
                         <select class="sorting__select" name="sorting" id="sorting">
                             <option value="popular">Сначала популярные</option>
                             <option value="cheap">Сначала дорогие</option>
                             <option value="expensive">Сначала недорогие</option>
                         </select>
                     </form>
-                    <a class="sorting__button sorting__button--light" href="#">
-                        <span class="visually-hidden">Сначала недорогие</span>
-                    </a>
-                    <a class="sorting__button" href="#">
-                        <span class="visually-hidden">Сначала дорогие</span>
-                    </a>
+                    <div class="sorting__button-wrapper">
+                        <a class="sorting__button sorting__button--light" href="#">
+                            <span class="visually-hidden">Сначала недорогие</span>
+                        </a>
+                        <a class="sorting__button" href="#">
+                            <span class="visually-hidden">Сначала дорогие</span>
+                        </a>
+                    </div>
                 </div>
                 <!-- Блок с карточками товара -->
                 <div class="product-card">
@@ -246,23 +250,26 @@
                 </ul>
                 <a class="footer__tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             </div>
-            <ul class="footer__link link">
-                <li class="link__item">
+            <ul class="footer__link link-list">
+                <li class="link-list__item">
+                    <div class="link-list__yellow-line"></div>
+                </li>
+                <li class="link-list__item">
                     <a href="https://www.facebook.com/htmlacademy" target="_blank">
                         <img src="./img/icon/facebook.png" alt="facebook" width="40" height="40">
                     </a>
                 </li>
-                <li class="link__item">
+                <li class="link-list__item">
                     <a href="https://www.instagram.com/htmlacademy" target="_blank">
                         <img src="./img/icon/instagram.png" alt="instagram" width="40" height="40">
                     </a>
                 </li>
-                <li class="link__item">
+                <li class="link-list__item">
                     <a href="https://twitter.com/htmlacademy_ru" target="_blank">
                         <img src="./img/icon/twitter.png" alt="twitter" width="40" height="40">
                     </a>
                 </li>
-                <li class="link__item">
+                <li class="link-list__item">
                     <a href="https://htmlacademy.ru" target="_blank">
                         <img src="./img/icon/htmlacademy.png" alt="htmlacademy" width="115" height="34">
                     </a>
