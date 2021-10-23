@@ -12,24 +12,24 @@
                 <img src="./img/main-logo.svg" alt="device">
             </a>
             <nav class="nav">
-                <ul class="nav__user nav-user">
-                    <li class="nav-user__item">
-                        <form action="https://echo.htmlacademy.ru" method="GET">
-                            <input class="nav-user__search" type="search" name="search" placeholder="Поиск по сайту">
-                        </form>
-                    </li>
-                    <li class="nav-user__item">
-                        <a class="nav-user__link" href="#">Войти</a>
-                    </li>
-                    <li class="nav-user__item">
-                        <a class="nav-user__link" href="#">Сравнить</a>
-                    </li>
-                    <li class="nav-user__item">
-                        <a class="nav-user__link" href="#">Корзина</a>
-                    </li>
-                </ul>
+                <div class="nav__user nav-user">
+                    <form class="nav-user__form" action="https://echo.htmlacademy.ru" method="GET">
+                        <input class="nav-user__search nav-user__search--loupe" type="search" name="search" placeholder="Поиск по сайту">
+                    </form>
+                    <ul class="nav-user__list">
+                        <li class="nav-user__item">
+                            <a class="nav-user__link nav-user__link--login" href="#">Войти</a>
+                        </li>
+                        <li class="nav-user__item">
+                            <a class="nav-user__link nav-user__link--compare" href="#">Сравнить</a>
+                        </li>
+                        <li class="nav-user__item nav-user__item--number">
+                            <a class="nav-user__link nav-user__link--basket" href="#">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
                 <ul class="nav__page nav-page">
-                    <li class="nav-page__item nav-page__item--catalog">
+                    <li class="nav-page__item">
                         <a class="nav-page__link text-link" href="catalog.html">Каталог товаров</a>
                         <button class="nav-page__button" type="button">
                             <span class="visually-hidden">+</span>
@@ -187,12 +187,14 @@
         </section>
         <!-- Блок специальная доставка -->
         <section class="special-offer wrapper">
-            <h2 class="visually-hidden">Доставка под заказ</h2>
-            <div class="special-offer__img special-offer__img--wrapper" >
-                <img src="./img/icon/icon-special_delivery.svg" alt="special-offer-img" width="47" height="31">
-            </div>
-            <p class="special-offer__text text-link">Доставим редкий товар под заказ</p>
-            <span class="special-offer__reference"><img src="./img/info 1.svg" alt=""></span>
+            <button class="special-offer__button" type="button">
+                <h2 class="visually-hidden">Доставка под заказ</h2>
+                <div class="special-offer__img special-offer__img--wrapper" >
+                    <img src="./img/icon/icon-special_delivery.svg" alt="special-offer-img" width="47" height="31">
+                </div>
+                <p class="special-offer__text text-link">Доставим редкий товар под заказ</p>
+                <span class="special-offer__reference"><img src="./img/info 1.svg" alt=""></span>
+            </button>
         </section>
         <!-- Блок о компании -->
         <section class="info-block wrapper">
@@ -202,9 +204,7 @@
                 <p class="about-us__description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
                 <ul class="about-us__list">
                     <li class="about-us__item">Меловые линии</li>
-                    <br>
                     <li class="about-us__item">СДИК</li>
-                    <br>
                     <li class="about-us__item">ТоксБерри</li>
                 </ul>
                 <a class="about-us__link text-link" href="#">Подробнее о нас</a>
@@ -231,16 +231,11 @@
             <div class="newsletter__wrapper wrapper">
                 <h2 class="newsletter__title text-title">Подпишитесь <br> на рассылку</h2>
                 <p class="newsletter__description">Еженедельный дайджест с обзорами новинок, <br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-                <form action="https://echo.htmlacademy.ru">
+                <form class="newsletter__form" action="https://echo.htmlacademy.ru">
                     <input class="newsletter__email" type="email" name="email" placeholder="Ваш e-mail">
                     <button class="newsletter__submit" type="button">Подписаться</button>
                 </form>
-                <ul class="newsletter__list">
-                    <li class="newsletter__item">
-                        <img src="./img/icon/icon-ok.svg" alt="">
-                        Это бесплатно
-                    </li>
-                </ul>
+                <span class="newslatter__free">Это бесплатно</span>
             </div>
         </section>
     </main>
@@ -258,31 +253,28 @@
                 </ul>
                 <a class="footer__tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             </div>
-            <ul class="footer__link link-list">
-                <li class="link-list__item">
-                    <div class="link-list__yellow-line"></div>
-                </li>
-                <li class="link-list__item">
-                    <a href="https://www.facebook.com/htmlacademy" target="_blank">
-                        <img src="./img/icon/facebook.png" alt="facebook" width="40" height="40">
-                    </a>
-                </li>
-                <li class="link-list__item">
-                    <a href="https://www.instagram.com/htmlacademy" target="_blank">
-                        <img src="./img/icon/instagram.png" alt="instagram" width="40" height="40">
-                    </a>
-                </li>
-                <li class="link-list__item">
-                    <a href="https://twitter.com/htmlacademy_ru" target="_blank">
-                        <img src="./img/icon/twitter.png" alt="twitter" width="40" height="40">
-                    </a>
-                </li>
-                <li class="link-list__item">
-                    <a href="https://htmlacademy.ru" target="_blank">
-                        <img src="./img/icon/htmlacademy.png" alt="htmlacademy" width="115" height="34">
-                    </a>
-                </li>
-            </ul>
+            <div class="footer__social-link social-link">
+                <ul class="social-link__list">
+                    <li class="social-link__item">
+                        <a href="https://www.facebook.com/htmlacademy" target="_blank">
+                            <img src="./img/icon/facebook.png" alt="facebook" width="40" height="40">
+                        </a>
+                    </li>
+                    <li class="social-link__item">
+                        <a href="https://www.instagram.com/htmlacademy" target="_blank">
+                            <img src="./img/icon/instagram.png" alt="instagram" width="40" height="40">
+                        </a>
+                    </li>
+                    <li class="social-link__item">
+                        <a href="https://twitter.com/htmlacademy_ru" target="_blank">
+                            <img src="./img/icon/twitter.png" alt="twitter" width="40" height="40">
+                        </a>
+                    </li>
+                </ul>
+                <a class="social-link__academy" href="https://htmlacademy.ru" target="_blank">
+                    <img src="./img/icon/htmlacademy.png" alt="htmlacademy" width="115" height="34">
+                </a>
+            </div>
         </div>
     </footer>
 </body>
