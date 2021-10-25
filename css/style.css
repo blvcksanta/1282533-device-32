@@ -579,10 +579,8 @@ body {
     margin-bottom: 97px;
 }
 
-.special-offer__button {
-    width: 100%;
-    padding: 0;
-    border: none;
+.special-offer__link {
+    background-color: #f0f0f0;
     display: flex;
     justify-content: space-between;
     align-items: center;
