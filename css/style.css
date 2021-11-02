@@ -184,7 +184,7 @@ body {
 .nav-user__button {
   display: none;
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 357px;
   padding: 10px 56px;
   font-family: inherit;
