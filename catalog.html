@@ -8,13 +8,14 @@
 <body>
     <header class="header">
         <div class="header__wrapper wrapper">
-            <a class="header__logo">
+            <a class="header__logo" href="#">
                 <img src="./img/main-logo.svg" alt="device">
             </a>
             <nav class="nav">
                 <div class="nav__user nav-user">
                     <form class="nav-user__form" action="https://echo.htmlacademy.ru" method="GET">
-                        <input class="nav-user__search nav-user__search--loupe" type="search" name="search" placeholder="Поиск по сайту">
+                        <input class="nav-user__search" type="search" name="search" placeholder="Поиск по сайту">
+                        <button class="nav-user__button" type="submit">Найти</button>
                     </form>
                     <ul class="nav-user__list">
                         <li class="nav-user__item">
@@ -30,20 +31,20 @@
                     </ul>
                 </div>
                 <ul class="nav__page nav-page">
-                    <li class="nav-page__item">
+                    <li class="nav-page__item nav-page__item--position">
                         <a class="nav-page__link text-link" href="catalog.html">Каталог товаров</a>
-                        <button class="nav-page__button" type="button">
+                        <button class="nav-page__button">
                             <span class="visually-hidden">+</span>
                         </button>
                     </li>
                     <li class="nav-page__item">
-                        <a class="nav-page__link text-link" href="#delivery-block">Доставка</a>
+                        <a class="nav-page__link nav-page__link--hover text-link" href="#delivery-block">Доставка</a>
                     </li>
                     <li class="nav-page__item">
-                        <a class="nav-page__link text-link" href="#guarantee-block">Гарантия</a>
+                        <a class="nav-page__link nav-page__link--hover text-link" href="#guarantee-block">Гарантия</a>
                     </li>
                     <li class="nav-page__item">
-                        <a class="nav-page__link text-link" href="#contacts">Контакты</a>
+                        <a class="nav-page__link nav-page__link--hover text-link" href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -210,7 +211,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="button text-link" type="button">Загрузить еще</button>
+                    <button class="button text-link">Загрузить еще</button>
                     <!-- Пагинация -->
                     <ul class="pagination">
                         <li class="pagination__item">
@@ -241,7 +242,7 @@
     </main>
     <footer class="footer"> 
         <div class="footer__wrapper wrapper">
-            <a class="footer__logo">
+            <a class="footer__logo" href="#">
                 <img src="./img/main-logo--footer.svg" alt="device">
             </a>
             <div class="footer__info">
@@ -256,22 +257,22 @@
             <div class="footer__social-link social-link">
                 <ul class="social-link__list">
                     <li class="social-link__item">
-                        <a href="https://www.facebook.com/htmlacademy" target="_blank">
+                        <a href="https://www.facebook.com/htmlacademy" target="_blank" rel="nofollow noopener">
                             <img src="./img/icon/facebook.png" alt="facebook" width="40" height="40">
                         </a>
                     </li>
                     <li class="social-link__item">
-                        <a href="https://www.instagram.com/htmlacademy" target="_blank">
+                        <a href="https://www.instagram.com/htmlacademy" target="_blank" rel="nofollow noopener">
                             <img src="./img/icon/instagram.png" alt="instagram" width="40" height="40">
                         </a>
                     </li>
                     <li class="social-link__item">
-                        <a href="https://twitter.com/htmlacademy_ru" target="_blank">
+                        <a href="https://twitter.com/htmlacademy_ru" target="_blank" rel="nofollow noopener">
                             <img src="./img/icon/twitter.png" alt="twitter" width="40" height="40">
                         </a>
                     </li>
                 </ul>
-                <a class="social-link__academy" href="https://htmlacademy.ru" target="_blank">
+                <a class="social-link__academy" href="https://htmlacademy.ru" target="_blank" rel="nofollow noopener">
                     <img src="./img/icon/htmlacademy.png" alt="htmlacademy" width="115" height="34">
                 </a>
             </div>
