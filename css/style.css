@@ -781,11 +781,15 @@ body {
   z-index: -1;
 }
 
-.description__link:hover:before {
+.description__link:hover::before {
   transform: scaleY(5);
 }
 
-.description__link:active:before {
+.description__link:active::before {
+  transform: scaleY(5);
+}
+
+.description__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
