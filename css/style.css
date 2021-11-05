@@ -2429,6 +2429,7 @@ body {
 
 .sorting__form {
   display: flex;
+  align-items: center;
 }
 
 .sorting__label {
