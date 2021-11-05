@@ -24,7 +24,7 @@
             </div>
             <nav class="nav">
                 <div class="nav__user nav-user">
-                    <form class="nav-user__form" action="https://echo.htmlacademy.ru" method="GET">
+                    <form class="nav-user__form" action="https://echo.htmlacademy.ru" method="get">
                         <input class="nav-user__search" type="search" name="search" placeholder="Поиск по сайту">
                         <button class="nav-user__button" type="submit">Найти</button>
                     </form>
@@ -134,9 +134,9 @@
                     <div class="sidebar__wrapper">
                         <p class="sidebar__title text-catalog">Фильтр:</p>
                     </div>
-                    <form class="sidebar__form" action="https://echo.htmlacademy.ru">
+                    <form class="sidebar__form" action="https://echo.htmlacademy.ru" method="get">
                         <!-- Фильтр по ценнику -->
-                        <fieldset class="sidebar__group sidebar__group--range-bar filtr-group">
+                        <fieldset class="sidebar__group sidebar__group--margin filtr-group">
                             <legend class="filtr-group__title filtr-group__title--margin text-subtitle">Стоимость</legend>     
                             <div class="filtr-group__scale">
                                 <div class="filtr-group__range-bar">
@@ -246,7 +246,7 @@
                 <!-- Сортировка товаров по категории -->
                 <div class="content">
                     <div class="sorting">
-                        <form class="sorting__form" action="https://echo.htmlacademy.ru">
+                        <form class="sorting__form" action="https://echo.htmlacademy.ru" method="get">
                             <label class="sorting__label text-catalog" for="sorting">Сортировка:</label>
                             <select class="sorting__select" name="sorting" id="sorting">
                                 <option value="popular">Сначала популярные</option>
