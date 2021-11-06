@@ -1254,10 +1254,11 @@ body {
 }
 
 .about-us__link {
+  margin-top: auto;
+  padding: 0 18px;
   position: relative;
   align-self: flex-start;
   z-index: 0;
-  padding: 0 18px;
 }
 
 .about-us__link::before {
@@ -1354,6 +1355,7 @@ body {
 }
 
 .contacts__link {
+  margin-top: auto;
   padding: 0 34px;
   align-self: flex-start;
   position: relative;
