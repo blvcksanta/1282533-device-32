@@ -115,7 +115,7 @@ body {
 }
 
 .header__wrapper {
-  padding: 40px 0 130px;
+  padding: 40px 0 110px;
   position: relative;
 }
 
@@ -494,11 +494,10 @@ body {
 .nav-page__item {
   line-height: 0;
   position: relative;
-  z-index: 2;
 }
 
 .nav-page__item--catalog {
-  grid-row: 1/3;
+  grid-row: 1/4;
 }
 
 .nav-page__item:nth-child(3n+3) {
@@ -728,7 +727,7 @@ body {
   max-width: 560px;
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .description__title {
@@ -1078,16 +1077,23 @@ body {
   width: 100%;
 }
 
-.services__description--delivery {
-  background: url("../img/icon/icon-delivery.svg") no-repeat 558px 15px;
+.services__content--delivery {
+  background: url("../img/icon/icon-delivery.svg") no-repeat 558px 86px;
 }
 
-.services__description--guarantee {
-  background: url("../img/icon/icon-guarantee.svg") no-repeat 543px -9px;
+.services__content--guarantee {
+  display: none;
+  background: url("../img/icon/icon-guarantee.svg") no-repeat 543px 60px;
 }
 
-.services__description--credit {
-  background: url("../img/icon/icon-credit.svg") no-repeat 533px -9px;
+.services__content--credit {
+  display: none;
+  background: url("../img/icon/icon-credit.svg") no-repeat 533px 60px;
+}
+
+.services__container {
+  max-width: 550px;
+  width: 100%;
 }
 
 .services__title {
@@ -1103,7 +1109,7 @@ body {
 /* Блок специальная доставка */
 
 .special-offer {
-  margin-bottom: 96px;
+  margin-bottom: 98px;
 }
 
 .special-offer__link {
@@ -1226,6 +1232,7 @@ body {
 
 .about-us__list {
   margin: 0;
+  margin-bottom: 72px;
   margin-left: 20px;
   padding-left: 0;
   font-weight: 700;
@@ -1247,7 +1254,6 @@ body {
 }
 
 .about-us__link {
-  margin-top: auto;
   position: relative;
   align-self: flex-start;
   z-index: 0;
@@ -1342,12 +1348,12 @@ body {
 
 .contacts__list {
   margin: 0;
+  margin-bottom: 67px;
   padding-left: 0;
   list-style-type: none;
 }
 
 .contacts__link {
-  margin-top: auto;
   padding: 0 34px;
   align-self: flex-start;
   position: relative;
@@ -1402,6 +1408,7 @@ body {
 
 .newsletter__title {
   margin: 0;
+  grid-column: 1/2;
 }
 
 .newsletter__description {
@@ -1711,9 +1718,7 @@ body {
   opacity: 0.3;
 }
 
-/* -------------- */
 /* Модальное окно */
-/* ---------------*/
 
 .modal {
   position: fixed;
@@ -2225,19 +2230,15 @@ body {
   -moz-appearance: textfield;
 }
 
-.filtr-group__range-min--active .filtr-group__range-toggle--min {  /* Класс filtr-group__range-min--active добавляется */
-  background-color: #000000;                                       /* при активации ползунка */
-}
-
-.filtr-group__range-min--active .filtr-group__label--min {
-  opacity: 1;
-}
-
-.filtr-group__range-max--active .filtr-group__range-toggle--max {
+/* Класс filtr-group__range-bar--active добавляется активной кнопке в фильтре стоимости */
+.filtr-group__range-bar--active .filtr-group__range-toggle--min,
+.filtr-group__range-bar--active .filtr-group__range-toggle--max {
   background-color: #000000;
 }
 
-.filtr-group__range-max--active .filtr-group__label--max {
+.filtr-group__range-bar--active .filtr-group__label--min,
+.filtr-group__range-bar--active .filtr-group__label--max {
+  color: #000000;
   opacity: 1;
 }
 
@@ -2536,7 +2537,8 @@ body {
   row-gap: 32px;
 }
 
-.product-card__item--new::after {                       /* Вставка иконки "Новый товар" для карточки */
+/* Псевдо элемент отвечает за вставку иконки "Новый товар" для карточки (любой карточки) */
+.product-card__item--new::after {
   content: "NEW";
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 14px;
