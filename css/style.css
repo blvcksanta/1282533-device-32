@@ -115,12 +115,12 @@ body {
 }
 
 .header__wrapper {
-  padding: 40px 0 130px;
+  padding: 39px 0 131px;
   position: relative;
 }
 
 .header__wrapper--catalog {
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 }
 
 .header__logo {
@@ -167,7 +167,6 @@ body {
 .nav-user {
   position: relative;
   display: flex;
-  align-items: center;
 }
 
 .nav-user__search {
@@ -239,9 +238,9 @@ body {
   margin: 0 0 0 24px;
   padding-left: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 250px repeat(2, min-content);
+  column-gap: 12px;
 }
 
 .nav-user__item {
@@ -2688,7 +2687,7 @@ body {
 .pagination {
   margin: 0;
   margin-left: 72px;
-  margin-bottom: 77px;
+  margin-bottom: 76px;
   padding-left: 0;
   list-style: none;
   background-color: #ebebeb;
