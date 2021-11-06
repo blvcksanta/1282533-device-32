@@ -115,12 +115,12 @@ body {
 }
 
 .header__wrapper {
-  padding: 40px 0 110px;
+  padding: 40px 0 130px;
   position: relative;
 }
 
 .header__wrapper--catalog {
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 }
 
 .header__logo {
@@ -488,7 +488,7 @@ body {
   list-style-type: none;
   display: grid;
   grid-template-columns: 540px repeat(3, min-content);
-  row-gap: 20px;
+  row-gap: 10px;
 }
 
 .nav-page__item {
@@ -2025,7 +2025,7 @@ body {
 /* Хлебные крошки */
 
 .inner-header {
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 }
 
 .inner-header__title {
@@ -2423,7 +2423,7 @@ body {
 
 .sorting {
   display: flex;
-  padding: 19px 0;
+  padding: 20px 0;
   background-color: #ebebeb;
   position: relative;
 }
@@ -2528,7 +2528,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 360px);
   column-gap: 40px;
-  row-gap: 44px;
+  row-gap: 45px;
 }
 
 .product-card__item {
