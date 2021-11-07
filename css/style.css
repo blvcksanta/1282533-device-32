@@ -247,10 +247,6 @@ body {
   line-height: 0;
 }
 
-.nav-user__item:first-child {
-  min-width: 245px;
-}
-
 .nav-user__link {
   display: inline-block;
   padding: 10px 20px 11px 44px;
