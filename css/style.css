@@ -169,6 +169,10 @@ body {
   display: flex;
 }
 
+.nav-user__label {
+  display: block;
+}
+
 .nav-user__search {
   box-sizing: border-box;
   padding: 10px 180px 10px 56px;
@@ -311,7 +315,7 @@ body {
 
 .nav-user__popover {
   position: absolute;
-  top: 40px;
+  top: 43px;
   left: 0;
   z-index: 5;
 }
@@ -1448,12 +1452,17 @@ body {
   border-color: rgba(255, 61, 61, 1);
 }
 
+.newsletter__label {
+  display: block;
+}
+
 .newsletter__email {
-  padding: 0;
+  padding: 13px 40px 9px 0;
+  width: 100%;
+  box-sizing: border-box;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  box-sizing: border-box;
   border: none;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
   color: #444444;
@@ -1790,7 +1799,11 @@ body {
   color: #000000;
 }
 
-.modal__subtitle--reference {
+.modal__label {
+  display: block;
+}
+
+.modal__reference {
   position: absolute;
   top: -36px;
   right: 14px;
@@ -1828,7 +1841,7 @@ body {
   height: 6px;
 }
 
-.modal__subtitle--reference:hover + .modal__popup {
+.modal__reference:hover + .modal__popup {
   display: block;
 }
 
@@ -1850,6 +1863,7 @@ body {
   line-height: 20px;
   background-color: #f0f0f0;
   width: 100%;
+  -moz-appearance: textfield;
 }
 
 .modal__input:hover {

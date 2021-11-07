@@ -24,7 +24,9 @@
             <nav class="nav">
                 <div class="nav__user nav-user">
                     <form class="nav-user__form" action="https://echo.htmlacademy.ru" method="get">
-                        <input class="nav-user__search" type="search" name="search" placeholder="Поиск по сайту">
+                        <label class="nav-user__label">
+                            <input class="nav-user__search" type="search" name="search" placeholder="Поиск по сайту">
+                        </label>
                         <button class="nav-user__button" type="submit">Найти</button>
                     </form>
                     <ul class="nav-user__list">
@@ -43,7 +45,7 @@
                                             <img class="popover-basket__img" src="./img/Catalog/product-1-small.png" alt="" width="41" height="43">
                                             <span class="popover-basket__name-item" >Любительская <br> селфи-палка</span>
                                         </a>
-                                        <button class="popover-basket__close ">
+                                        <button class="popover-basket__close" type="button">
                                             <span class="visually-hidden">Удалить</span>
                                         </button>
                                     </li>
@@ -52,7 +54,7 @@
                                             <img class="popover-basket__img" src="./img/Catalog/product-2-small.png" alt="" width="41" height="43">
                                             <span class="popover-basket__name-item">Профессиональная селфи-палка</span>
                                         </a>
-                                        <button class="popover-basket__close">
+                                        <button class="popover-basket__close" type="button">
                                             <span class="visually-hidden">Удалить</span>
                                         </button>
                                     </li>
@@ -61,7 +63,7 @@
                                     <span class="popover-basket__text">Товаров: 2</span>
                                     <span class="popover-basket__text">Сумма: 2000 &#8381;</span>
                                 </div>
-                                <button class="popover-basket__button">
+                                <button class="popover-basket__button" type="button">
                                     <span class="popover-basket__button-text">Открыть корзину</span>
                                 </button>
                             </div>
@@ -71,7 +73,7 @@
                 <ul class="nav__page nav-page">
                     <li class="nav-page__item nav-page__item--catalog">
                         <a class="nav-page__link text-link" href="catalog.html">Каталог товаров</a>
-                        <button class="nav-page__button">
+                        <button class="nav-page__button" type="button">
                             <span class="visually-hidden">+</span>
                         </button>
                         <ul class="subcatalog">
@@ -116,10 +118,10 @@
                 <img class="slider__quadcopter" src="./img/slider/slider-1.png" alt="Квадрокоптер" width="560" height="560">
                 <img class="slider__bracer" src="./img/slider/slider-2.png" alt="Фитнес-браслет" width="560" height="560">
                 <img class="slider__selfie-stick" src="./img/slider/slider-3.png" alt="Селфи-палка" width="560" height="560">
-                <button class="slider__button slider__button--prev">
+                <button class="slider__button slider__button--prev" type="button">
                     <span class="visually-hidden">Предыдущее фото</span>
                 </button>
-                <button class="slider__button slider__button--next">
+                <button class="slider__button slider__button--next" type="button">
                     <span class="visually-hidden">Следующее фото</span>
                 </button>
             </div>
@@ -140,17 +142,17 @@
                     <a class="description__link text-link" href="#">Подробнее</a>
                     <ol class="description__list pagination-list">
                         <li class="pagination-list__item">
-                            <button class="pagination-list__button pagination-list__button--active">
+                            <button class="pagination-list__button pagination-list__button--active" type="button">
                                 <span class="visually-hidden">1 Фото</span>
                             </button>
                         </li>
                         <li class="pagination-list__item">
-                            <button class="pagination-list__button">
+                            <button class="pagination-list__button" type="button">
                                 <span class="visually-hidden">2 Фото</span>
                             </button>
                         </li>
                         <li class="pagination-list__item">
-                            <button class="pagination-list__button">
+                            <button class="pagination-list__button" type="button">
                                 <span class="visually-hidden">3 Фото</span>
                             </button>
                         </li>
@@ -359,7 +361,9 @@
                 <h2 class="newsletter__title text-title">Подпишитесь <br> на рассылку</h2>
                 <p class="newsletter__description">Еженедельный дайджест с обзорами новинок, <br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
                 <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
-                    <input class="newsletter__email" type="email" name="email" placeholder="Ваш e-mail" required>
+                    <label class="newsletter__label">
+                        <input class="newsletter__email" type="email" name="email" placeholder="Ваш e-mail" required>
+                    </label>
                     <button class="newsletter__submit" type="submit">Подписаться</button>
                 </form>
                 <span class="newslatter__free">Это бесплатно</span>
@@ -441,13 +445,15 @@
     <div class="modal">
         <div class="modal__window">
             <h2 class="modal__title">Доставка под заказ</h2>
-            <button class="modal__exit">
+            <button class="modal__exit" type="button">
                 <span class="visually-hidden">Закрыть</span>
             </button>
             <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="modal__item modal__item--column-name">
                     <legend class="modal__subtitle">Ваше имя:</legend>
-                    <input class="modal__input modal__input--padding-name modal__input--error" type="text" name="name" placeholder="Имя Фамилия" required>
+                    <label class="modal__label">
+                        <input class="modal__input modal__input--padding-name modal__input--error" type="text" name="name" placeholder="Имя Фамилия" required>
+                    </label>
                     <svg class="modal__name-svg" width="13" height="12" viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z"/>
                     </svg> 
@@ -455,7 +461,9 @@
                 </fieldset>
                 <fieldset class="modal__item modal__item--column-email">
                     <legend class="modal__subtitle">Ваш e-mail:</legend>                     
-                    <input class="modal__input modal__input--padding-email" type="email" name="e-mail" placeholder="email@mail.ru" value="krasotka92@mail.ru" required>
+                    <label class="modal__label">
+                        <input class="modal__input modal__input--padding-email" type="email" name="e-mail" placeholder="email@mail.ru" value="krasotka92@mail.ru" required>
+                    </label>
                     <svg  class="modal__email-svg" width="15" height="12" viewBox="0 0 15 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.6 8C7.2 8 7 7.9 6.6 7.7L0 4V11C0 11.6 0.4 12 0.9 12H14.1C14.7 12 15 11.6 15 11V4L8.5 7.7C8.1 7.9 7.9 8 7.6 8ZM14.1 0H0.9C0.4 0 0 0.5 0 1V1.8L7.5 6L15 1.8V1C15 0.5 14.6 0 14.1 0Z"/>
                     </svg> 
@@ -463,18 +471,22 @@
                 </fieldset>
                 <fieldset class="modal__item modal__item--column-product">
                     <legend class="modal__subtitle">Что нужно привезти:</legend>
-                    <input class="modal__input" type="text" name="Product" placeholder="В свободной форме">
+                    <label class="modal__label">
+                        <input class="modal__input" type="text" name="Product" placeholder="В свободной форме">
+                    </label>
                 </fieldset>
                 <fieldset class="modal__item">
                     <legend class="modal__subtitle">Количество:</legend>
-                    <span class="modal__subtitle--reference">i</span>
+                    <span class="modal__reference">i</span>
                     <div class="modal__popup">
                         <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br> к провозу багажа.</p>
                     </div>
                     <button class="modal__button modal__button--remove" type="button">
                         <span class="visually-hidden">Убрать</span>
                     </button>
-                    <input class="modal__input modal__input--padding-quantity modal__input--arrow" type="number" name="quantity" placeholder="0" value="1" required>
+                    <label class="modal__label">
+                        <input class="modal__input modal__input--padding-quantity modal__input--arrow" type="number" name="quantity" placeholder="0" value="1" required>
+                    </label>
                     <button class="modal__button modal__button--add" type="button">
                         <span class="visually-hidden">Добавить</span>
                     </button>

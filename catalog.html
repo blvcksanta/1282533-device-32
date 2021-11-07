@@ -26,7 +26,9 @@
             <nav class="nav">
                 <div class="nav__user nav-user">
                     <form class="nav-user__form" action="https://echo.htmlacademy.ru" method="get">
-                        <input class="nav-user__search" type="search" name="search" placeholder="Поиск по сайту">
+                        <label class="nav-user__label">
+                            <input class="nav-user__search" type="search" name="search" placeholder="Поиск по сайту">
+                        </label>
                         <button class="nav-user__button" type="submit">Найти</button>
                     </form>
                     <ul class="nav-user__list">
@@ -43,19 +45,19 @@
                                 <ul class="popover-basket__list">
                                     <li class="popover-basket__item">
                                         <a class="popover-basket__link" href="#">
-                                            <img class="popover-basket__img" src="./img/Catalog/product-1-small.png" alt="" width="41" height="43">
+                                            <img class="popover-basket__img" src="./img/catalog/product-1-small.png" alt="" width="41" height="43">
                                             <span class="popover-basket__name-item" >Любительская <br> селфи-палка</span>
                                         </a>
-                                        <button class="popover-basket__close ">
+                                        <button class="popover-basket__close" type="button">
                                             <span class="visually-hidden">Удалить</span>
                                         </button>
                                     </li>
                                     <li class="popover-basket__item">
                                         <a class="popover-basket__link" href="#">
-                                            <img class="popover-basket__img" src="./img/Catalog/product-2-small.png" alt="" width="41" height="43">
+                                            <img class="popover-basket__img" src="./img/catalog/product-2-small.png" alt="" width="41" height="43">
                                             <span class="popover-basket__name-item">Профессиональная селфи-палка</span>
                                         </a>
-                                        <button class="popover-basket__close">
+                                        <button class="popover-basket__close" type="button">
                                             <span class="visually-hidden">Удалить</span>
                                         </button>
                                     </li>
@@ -64,7 +66,7 @@
                                     <span class="popover-basket__text">Товаров: 2</span>
                                     <span class="popover-basket__text">Сумма: 2000 &#8381;</span>
                                 </div>
-                                <button class="popover-basket__button">
+                                <button class="popover-basket__button" type="button">
                                     <span class="popover-basket__button-text">Открыть корзину</span>
                                 </button>
                             </div>
@@ -74,7 +76,7 @@
                 <ul class="nav__page nav-page">
                     <li class="nav-page__item nav-page__item--catalog">
                         <a class="nav-page__link text-link" href="catalog.html">Каталог товаров</a>
-                        <button class="nav-page__button">
+                        <button class="nav-page__button" type="button">
                             <span class="visually-hidden">+</span>
                         </button>
                         <ul class="subcatalog">
@@ -269,39 +271,39 @@
                         <ul class="product-card__list">
                             <li class="product-card__item">
                                 <a class="product-card__link" href="#">
-                                    <img class="product-card__img" src="./img/Catalog/product-1.png" alt="" width="360" height="380">
+                                    <img class="product-card__img" src="./img/catalog/product-1.png" alt="" width="360" height="380">
                                 </a>
                                 <h3 class="product-card__title text-subtitle">Любительская селфи-палка</h3>
                                 <span class="product-card__price">500 &#8381;</span>
-                                <button class="product-card__details text-link">Подробнее</button>
+                                <button class="product-card__details text-link" type="button">Подробнее</button>
                             </li>
                             <li class="product-card__item">
                                 <a class="product-card__link" href="#">
-                                    <img class="product-card__img" src="./img/Catalog/product-2.png" alt="" width="360" height="380">
+                                    <img class="product-card__img" src="./img/catalog/product-2.png" alt="" width="360" height="380">
                                 </a>
                                 <h3 class="product-card__title text-subtitle">Профессиональная <br> селфи-палка</h3>
                                 <span class="product-card__price">1 500 &#8381;</span>
-                                <button class="product-card__details text-link">Подробнее</button>
+                                <button class="product-card__details text-link" type="button">Подробнее</button>
                             </li>
                             <li class="product-card__item">
                                 <a class="product-card__link" href="#">
-                                    <img class="product-card__img" src="./img/Catalog/product-3.png" alt="" width="360" height="380">
+                                    <img class="product-card__img" src="./img/catalog/product-3.png" alt="" width="360" height="380">
                                 </a>
                                 <h3 class="product-card__title text-subtitle">Непотопляемая <br> селфи-палка</h3>
                                 <span class="product-card__price">2 500 &#8381;</span>
-                                <button class="product-card__details text-link">Подробнее</button>
+                                <button class="product-card__details text-link" type="button">Подробнее</button>
                             </li>
                             <li class="product-card__item product-card__item--new">
                                 <a class="product-card__link" href="#">
-                                    <img class="product-card__img" src="./img/Catalog/product-4.png" alt="" width="360" height="380">
+                                    <img class="product-card__img" src="./img/catalog/product-4.png" alt="" width="360" height="380">
                                 </a>
                                 <h3 class="product-card__title text-subtitle">Селфи-палка «Следуй за мной»</h3>
                                 <span class="product-card__price">4 900 &#8381;</span>
-                                <button class="product-card__details text-link">Подробнее</button>
+                                <button class="product-card__details text-link" type="button">Подробнее</button>
                             </li>
                         </ul>
                     </div>
-                    <button class="content__more text-link">Загрузить еще</button>
+                    <button class="content__more text-link" type="button">Загрузить еще</button>
                     <!-- Пагинация -->
                     <ul class="pagination">
                         <li class="pagination__item">
