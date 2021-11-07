@@ -1448,6 +1448,7 @@ body {
   border-color: rgba(0, 0, 0, 1);
 }
 
+/* Класс добавляется во время ошибки ввода e-mail */
 .newsletter__email--error {
   border-color: rgba(255, 61, 61, 1);
 }
