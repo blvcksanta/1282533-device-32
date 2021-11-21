@@ -204,8 +204,8 @@ body {
 .nav-user__button {
   display: none;
   position: absolute;
-  top: 1px;
-  left: 357px;
+  top: 0;
+  left: 356px;
   padding: 10px 56px;
   font-family: inherit;
   font-size: 16px;
